@@ -1,0 +1,28 @@
+.footer
+	position: relative
+	padding: 30px 0 55px
+	background: $bg
+	&__wrap
+		display: flex
+		flex-direction: column
+
+	.menu
+		margin: 0 auto 20px
+		&__item
+			margin-right: 22px
+			&:first-child
+				a
+					&:hover
+						color: $yellow
+					&::after
+						display: none
+
+	.social-icon
+		margin: 0 auto 30px
+
+	&__copyright
+		text-align: center
+		font-weight: bold
+		font-size: 15px
+		line-height: 19px
+		color: $white

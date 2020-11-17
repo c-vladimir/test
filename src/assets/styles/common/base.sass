@@ -1,0 +1,62 @@
+html,
+body
+	height: 100%
+
+body
+	font-family: 'PT Sans', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.4
+	color: $text-color
+	&.overflow
+		overflow: hidden
+		height: 100%
+
+body,
+input,
+button,
+textarea
+	font-family: 'PT Sans', sans-serif
+
+input,
+button,
+textarea
+	@include resetInput
+
+button
+	cursor: pointer
+	&::-moz-focus-inner
+		border: 0
+		padding: 0
+
+a
+	text-decoration: none
+
+em,
+i
+	font-style: italic
+
+b,
+strong
+	font-weight: bold
+
+h1, h2, h3, h4
+	font-family: 'PT Sans', sans-serif
+	font-weight: 700
+	font-style: normal
+
+.title
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+
+.text
+	font-size: 16px
+	line-height: 21px
+	position: relative
+	p
+		margin: 0 0 21px
+		&:last-child
+			margin: 0
+		@media (--tablet)
+			margin: 0 0 12px

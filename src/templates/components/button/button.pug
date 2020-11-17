@@ -1,0 +1,4 @@
+mixin button(options)
+	- var options = options ? options : { text: 'Default', type: 'button' }
+	button.button&attributes(attributes)(type=options.type)
+		span.button__inner= options.text

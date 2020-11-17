@@ -1,0 +1,33 @@
+.header
+	@media (--desktop)
+		&__wrap
+			padding-right: 80px
+			display: flex
+			justify-content: space-between
+
+			.icon-menu-mobile
+				display: block
+				top: 15px
+				right: 0px
+
+			.logo
+				margin-right: 0
+
+	@media (--desktop-sm)
+		&__wrap
+			.icon-menu-mobile
+				top: 9px
+				right: 0px
+		&__menu-mobile
+			top: 70px
+	@media (--tablet-sm)
+		&__wrap
+			padding-right: 60px
+	@media (--mobile)
+		&__wrap
+			padding-right: 40px
+			.icon-menu-mobile
+				top: 2px
+				right: 0px
+		&__menu-mobile
+			top: 60px

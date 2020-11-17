@@ -1,0 +1,35 @@
+.social-icon
+	display: flex
+	width: auto
+	margin: 0 auto
+	padding: 0
+
+	&__item
+		padding: 0
+		//display: inline-block
+		margin-right: 33px
+		&:last-child
+			margin: 0
+
+	a
+		position: relative
+		display: block
+		width: 50px 
+		height: 50px
+		border-radius: 50%
+		background: rgba(255, 255, 255, 0.3)
+		.svg-inline--fa
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			color: $white
+			font-size: 32px
+			transition: .25s
+
+		&:hover
+			.svg-inline--fa
+				color: $yellow
+		&:focus
+			.svg-inline--fa
+				color: $link_hover

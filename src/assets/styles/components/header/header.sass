@@ -1,0 +1,48 @@
+.header
+	position: relative
+	padding: 24px 0 0
+
+	&__wrap
+		position: relative
+		display: flex
+		justify-content: start
+		align-items: center
+
+	&__menu-mobile
+		position: fixed
+		height: 300px
+		width: 320px
+		background: rgba(255, 255, 255, 0.98)
+		top: 80px
+		right: 0px
+		z-index: 999
+		display: none
+		padding: 20px 20px 20px
+		&.-active
+			display: block
+
+	.logo
+		margin-right: 61px
+
+	.menu
+		margin-right: 164px
+
+
+.block-entry
+	display: flex
+	&__item
+		display: block
+		padding: 10px 0 7px
+		color: $white
+		margin-right: 30px
+		&:hover
+			color: $yellow
+		&:focus
+				color: $link_hover
+		&:last-child
+			margin: 0
+	@media (--mobile)
+		&__item
+			margin-right: 15px
+			font-size: 14px
+			padding: 5px 0 5px
